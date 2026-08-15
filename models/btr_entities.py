@@ -837,12 +837,14 @@ class Maps:
             "Saints Quarter": "圣徒区",
             "Empire State": "帝国之洲",
             "Siege of Cairo": "开罗围城",
+            "Cairo Bazaar": "开罗集市",
             "Manhattan Bridge": "曼哈顿大桥",
             "New Sobek City": "新索贝克城",
             "Blackwell Fields": "布莱克威尔原野",
             "Contaminated": "污染",
             "Eastwood": "东方木林",
             "Hagental Base": "哈根塔尔",
+            "Tsuru Reef": "津留礁",
         }
         return category_map.get(map_name, map_name)
 
