@@ -17,6 +17,12 @@
     "type": "int",
     "default": 90
   },
+  "auto_recall_seconds": {
+    "hint": "仅在群聊中生效：插件命令响应发出后，自动撤回响应消息和触发命令；机器人需要群管理员权限才能撤回他人消息。私聊消息不会撤回，设置为 0 可关闭。",
+    "description": "自动撤回秒数",
+    "type": "int",
+    "default": 60
+  },
   "bf_prompt": {
     "hint": "调用bf_tool工具时给LLM的Prompt",
     "description": "战绩评价Prompt",
