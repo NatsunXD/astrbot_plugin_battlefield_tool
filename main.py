@@ -25,7 +25,7 @@ from .database.battlefield_db_service import BattleFieldDBService
     "astrbot_plugin_battlefield_tool",  # name
     "NatsunXD",  # author
     "战地风云战绩查询插件",  # desc
-    "v2.2.1",  # version
+    "v2.2.2",  # version
 )
 class BattlefieldTool(Star):
     def __init__(self, context: Context, config: AstrBotConfig = None):

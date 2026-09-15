@@ -1,5 +1,7 @@
 from typing import Dict, Any, Callable
 
+from astrbot.api import logger
+
 from ...constants.battlefield_constants import ImageUrls
 
 class BtrImageGenerator:
@@ -146,6 +148,10 @@ class BtrImageGenerator:
                 返回生成的图片URL
             """
             html = await html_builder_func(ea_name,stat_data,weapon_data,vehicle_data,soldier_data,mode_data,maps_data, game,matches_timestamp,provider)
+            logger.info(
+                "Battlefield Tool recent report T2I request template size: %d bytes",
+                len(html.encode("utf-8")),
+            )
             url = await html_render_func(
                 html,
                 {},
